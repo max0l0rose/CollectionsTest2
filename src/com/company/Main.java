@@ -1,6 +1,8 @@
 package com.company;
 
-import java.util.HashSet;
+import java.util.*;
+import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.TimeUnit;
 
 public class Main {
 
@@ -14,5 +16,14 @@ public class Main {
         set2.add(new Class1(1));
         set2.add(new Class1(1));
         set2.add(new Class1(2));
+
+        CopyOnWriteArrayList copyOnWriteArrayList;
+
+
+        Collection<Integer> syncCollection = Collections.synchronizedCollection(new ArrayList<>());
+
+        List<Integer> syncList = Collections.synchronizedList(new ArrayList<>());
+
+        //TimeUnit.MINUTES.sleep(1);
     }
 }
