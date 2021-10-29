@@ -2,15 +2,12 @@ package com.company;
 
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.concurrent.TimeUnit;
-import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class Main {
 
     public static void main(String[] args) throws InterruptedException
     {
-
         Collection<Integer> syncCollection = Collections.synchronizedCollection(
                 new ArrayList<>()
         );
